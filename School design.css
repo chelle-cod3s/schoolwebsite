@@ -68,13 +68,13 @@
     background-image: linear-gradient(rgb(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(steps.jpg);
     background-size: cover;
     background-position: center;
+   
 }
 
 .content {
     position: absolute;
     width: 100%;
     text-align: center;
-    /* left: 50%; */
     bottom: 50%;
     transform: translate(1/2, 1/2);
     color: white;
@@ -192,7 +192,6 @@ svg {
     justify-content: center;
     align-items: center;
     margin-top: 1%;
-    /* margin-bottom: 5%; */
     scroll-behavior: smooth;
 }
 
@@ -438,19 +437,22 @@ svg {
     width: 40%;
 }
 
-.left svg{
+.left svg {
     width: 60%;
-    color:white;
-  
+    color: white;
+
 }
-.left svg:hover{
-    color: rgb(77, 77, 237);;
+
+.left svg:hover {
+    color: rgb(77, 77, 237);
+    ;
 }
 
 .Right {
     line-height: 1.5;
 }
-.footer-after{
+
+.footer-after {
     color: white;
     padding: 10px;
     background-color: rgb(84, 84, 145);
@@ -458,79 +460,64 @@ svg {
     width: 100%;
     height: 5dvh;
 }
-@media screen and (max-width: 600px) {
-    .middle_header {
-        flex-direction: column;
-    }
 
-    .container1, .container2, .container3 {
-        width: 100%;  /* Full width on small screens */
-        height: auto; /* Adjust height for content */
-        margin: 0 0 20px; /* Margin for spacing */
+@media (max-width:786px) {
+    .middle_header{
+        display: none;
     }
-
-    .content h1 {
-        font-size: 30px; /* Smaller font size */
-    }
-
-    .content p {
-        font-size: 14px; /* Adjusted paragraph size */
-    }
-
     .boxes {
-        flex-direction: column; /* Stack boxes vertically */
-        align-items: center;
+        display: none;
     }
 
-    .footer-content {
-        flex-direction: column; /* Stack footer content */
-        align-items: center;
-        width: 100%; /* Ensure full width */
-    }
+    .content h1,
+    {
+    font-size: 10px;
+}
+.content p{
+    font-size: 15px;
+}
+.banner {
+    background-size: contain;
+
+    background-repeat: no-repeat;
+   
+
+}
+.section1, .section2 {
+    flex-direction: column; 
+    align-items: flex-start; 
+    margin: 0 auto; 
+    width: 100%;
 }
 
-@media screen and (max-width: 768px) {
-    .top_header, .bottom_header {
-        padding: 10px; /* Increase padding for touch targets */
-    }
-
-    .banner {
-        height: 80dvh; /* Adjust banner height */
-    }
-
-    button {
-        width: 100%; /* Full-width buttons */
-    }
-
-    .img1, .img2, .img3 {
-        width: 45%; /* Adjust image width for medium screens */
-    }
-
-    .teacher-text {
-        margin-left: 5%; /* Adjust text margin */
-    }
+.grass_text, .teacher-text {
+    margin-left: 0; 
+    width: 100%; 
+    padding: 10px;
 }
-
-@media screen and (min-width: 769px) {
-    .img1, .img2, .img3 {
-        width: 30%; /* Wider images on larger screens */
-    }
-
-    .boxes {
-        flex-direction: row; /* Arrange boxes in a row */
-    }
-
-    .footer-content {
-        justify-content: space-between; /* Space footer content evenly */
-    }
+.grass_text p ,.teacher-text p{
+    font-size: 16px !important;
 }
-
-@media screen and (min-width: 1024px) {
-    .banner {
-        height: 100dvh; /* Maintain full height on larger screens */
-    }
-
-    .section1, .section2, .section3 {
-        margin-bottom: 30px; /* Increased margin for spacing */
-    }
+.image-container, .image-container2 {
+    width: 100%;
+}
+.image-container img, .image-container2 img {
+    width: 100%; 
+    height: auto; 
+}
+.section4 {
+    background-size: 180%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.section4 h1{
+    font-size: 35px !important;
+}
+.section4 p{
+    font-size: 1em !important;
+}
+.apply-now{
+    padding: 8px;
+   
+}
 }
